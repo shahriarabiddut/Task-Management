@@ -52,7 +52,7 @@ const Menu = ({ dark }) => {
         <li className="relative px-6 py-1">
           <NavLink to={`/dashboard/incompletedTasks`} className={menuCss}>
             <TbNotebookOff className="text-xl" />
-            <span className="ml-4">Incompleted Tasks</span>
+            <span className="ml-4">Pending Tasks</span>
           </NavLink>
         </li>
 

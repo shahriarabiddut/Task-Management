@@ -1,7 +1,22 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const ImportantTasks = () => {
-  return <div>ImportantTasks</div>;
+  const dark = true;
+  return (
+    <>
+      <Helmet>
+        <title>Important Tasks | {import.meta.env.VITE_NAME} </title>
+      </Helmet>
+      <h1
+        className={`text-2xl font-semibold text-center my-4 ${
+          dark ? "text-white" : "text-gray-800"
+        }`}
+      >
+        Important Tasks
+      </h1>
+    </>
+  );
 };
 
 export default ImportantTasks;
