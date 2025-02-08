@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { IoIosAddCircle } from "react-icons/io";
 import Cards from "../components/Cards";
 import InputData from "../components/InputData";
 
 const AllTasks = () => {
+  const [inputForm, setInputForm] = useState("hidden");
   const dark = true;
   return (
     <>
@@ -24,12 +25,15 @@ const AllTasks = () => {
             dark ? "text-white " : "text-gray-800 "
           }`}
         >
-          <IoIosAddCircle className="text-4xl" />
+          <IoIosAddCircle
+            className="text-4xl"
+            onClick={() => setInputForm("fixed")}
+          />
         </div>
       </div>
 
       <Cards show={true} status={"all"} />
-      <InputData />
+      <InputData inputForm={inputForm} setInputForm={setInputForm} />
     </>
   );
 };

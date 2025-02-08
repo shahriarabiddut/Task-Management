@@ -57,7 +57,7 @@ const Menu = ({ dark }) => {
         </li>
 
         <div
-          className={`divider mx-5 my-5 w-full h-1 ${
+          className={`divider md:mx-6 my-5 w-full h-1 ${
             dark ? "bg-gray-200" : "bg-gray-500"
           }`}
         ></div>

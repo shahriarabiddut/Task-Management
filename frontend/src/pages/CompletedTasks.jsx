@@ -10,7 +10,7 @@ const CompletedTasks = () => {
         <title>Completed Tasks | {import.meta.env.VITE_NAME} </title>
       </Helmet>
       <h1
-        className={`text-2xl font-semibold text-center my-4 ${
+        className={`text-5xl font-semibold text-center my-4 ${
           dark ? "text-white" : "text-gray-800"
         }`}
       >

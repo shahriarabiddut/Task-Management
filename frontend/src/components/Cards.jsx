@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 import { IoIosAddCircle } from "react-icons/io";
 import InputData from "./InputData";
 
 const Cards = ({ show, status }) => {
+  const dark = true;
   const data = [
     {
       id: "1",
@@ -62,8 +63,7 @@ const Cards = ({ show, status }) => {
   ];
   const tasks =
     status == "all" ? data : data.filter((task) => task.status == status);
-  const dark = true;
-
+  const [inputForm, setInputForm] = useState("hidden");
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-2">
       {tasks.map((task) => (
@@ -71,15 +71,16 @@ const Cards = ({ show, status }) => {
       ))}
       {show && (
         <div
-          className={`w-full flex flex-1 flex-col justify-center items-center p-4 scale-95 hover:scale-100 hover:transition hover:cursor-pointer duration-300 ${
+          className={`w-full flex flex-1 flex-col justify-center items-center p-4 scale-100 hover:scale-105 hover:transition hover:cursor-pointer duration-400 ${
             dark ? "text-white bg-gray-600" : "text-gray-800 bg-gray-100"
-          }`}
+          } rounded-xl`}
+          onClick={() => setInputForm("fixed")}
         >
           <IoIosAddCircle className="text-5xl" />
           <h2 className={`text-center`}> Add Tasks</h2>
         </div>
       )}
-      <InputData />
+      <InputData inputForm={inputForm} setInputForm={setInputForm} />
     </div>
   );
 };
