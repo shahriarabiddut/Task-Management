@@ -1,10 +1,6 @@
-# 📝 Task Manager Web Application
+# 📝 Task Management
 
-## 🚀 Project Overview
-
-The **Task Manager Web Application** is a full-stack task management system that allows users to **create, read, update, and delete (CRUD) tasks** while integrating **user authentication and profile management**. The application is designed to help users efficiently organize their tasks with **due dates, status tracking, and account security features**.
-
-This project leverages **React.js, Tailwind CSS, Redux Toolkit, and RESTful API integration** for a seamless and modern user experience.
+The **Task Management** is a full-stack task management system that allows users to **create, read, update, and delete (CRUD) tasks** while integrating **user authentication and profile management**. The application is designed to help users efficiently organize their tasks with **due dates, status tracking, and account security features**.
 
 ## 📌 Features
 
@@ -14,11 +10,12 @@ This project leverages **React.js, Tailwind CSS, Redux Toolkit, and RESTful API 
 ✅ **Profile Update** – Users can modify their profile details.  
 ✅ **Password Recovery** – Supports **Forgot Password** and **Reset Password** functionalities.
 
-### **📌 Task Management (CRUD Operations)**
+### **📌 Tasks Management**
 
 ✅ **Create Tasks** – Users can add new tasks with a title, description, due date, and status.  
 ✅ **Read Tasks** – Users can view and filter their tasks.  
 ✅ **Update Tasks** – Users can edit task details and update status (e.g., "Pending", "Completed").  
+✅ **Important Tasks** – Users can mark task as important .  
 ✅ **Delete Tasks** – Users can remove tasks they no longer need.
 
 ### **⚡ State Management & API Integration**
@@ -26,12 +23,10 @@ This project leverages **React.js, Tailwind CSS, Redux Toolkit, and RESTful API 
 ✅ **Redux Toolkit** – Efficiently manages the application’s state.  
 ✅ **RESTful API** – Communicates with the backend for authentication and task operations.
 
-### **🎨 UI & Design (Tailwind CSS)**
+### **🎨 UI & Design**
 
-✅ **Sticky Header** – Navigation bar stays fixed at the top for easy access.  
-✅ **Navigation Links** – Includes **Login** and **Register** buttons in the header.  
 ✅ **Responsive Layout** – Mobile-friendly UI with a clean grid-based task display.  
-✅ **Dark Mode Support ** – Enhances user experience with a theme toggle.
+✅ **Dark Mode Support(Dashboard)** – Enhances user experience with a theme toggle.
 
 ## 🏗️ Tech Stack
 
@@ -41,7 +36,7 @@ This project leverages **React.js, Tailwind CSS, Redux Toolkit, and RESTful API 
 | **Tailwind CSS**         | Styling and responsive design            |
 | **Redux Toolkit**        | State management                         |
 | **Node.js & Express.js** | Backend API                              |
-| **MongoDB / PostgreSQL** | Database for storing user & task data    |
+| **MongoDB**              | Database for storing user & task data    |
 | **JWT (JSON Web Token)** | Secure authentication                    |
 | **REST API**             | Communication between frontend & backend |
 
